@@ -133,61 +133,20 @@
               ></a>
             </li>
           </ul>
-          <!-- <button class="menu-btn" data-menu-open>
-            <svg class="menu-icon" width="17" height="14.5">
-              <use href="./images/sprite.svg#menu"></use>
-            </svg>
-          </button> -->
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+              <li><a class="menu__item" href="#">Проекты</a></li>
+              <li><a class="menu__item" href="#">Команда</a></li>
+              <li><a class="menu__item" href="#">Блог</a></li>
+              <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
-
-<!-- Обгортка для навігаційного меню, додає семантику та доступність -->
-<nav role="navigation">
-  <!-- Контейнер для всієї структури бургер-меню -->
-  <div class="menuT" id="menuToggle">
-    <!-- Прихований чекбокс для перемикання стану меню (відкрито/закрито) -->
-    <input type="checkbox" id="menuCheckbox" />
-    <!-- Перша горизонтальна лінія іконки бургера -->
-    <span></span>
-    <!-- Друга горизонтальна лінія іконки бургера -->
-    <span></span>
-    <!-- Третя горизонтальна лінія іконки бургера -->
-    <span></span>
-    <!-- Список із пунктами меню -->
-    <ul id="menu">
-      <!-- Пункт меню "Home" -->
-      <li>
-        <!-- Посилання на головну сторінку -->
-        <a href="#">
-          <!-- Мітка, яка закриває меню при кліку, прив’язана до чекбокса -->
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
-        </a>
-      </li>
-      <!-- Пункт меню "About" -->
-      <li>
-        <!-- Посилання на секцію "About" -->
-        <a href="#about">
-          <!-- Мітка, яка закриває меню при кліку -->
-          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
-        </a>
-      </li>
-      <!-- Пункт меню "Info" -->
-      <li>
-        <!-- Мітка для закриття меню, всередині якої є посилання -->
-        <label for="menuCheckbox"><a>Info</a></label>
-      </li>
-      <!-- Пункт меню "Contact" -->
-      <li>
-        <!-- Мітка для закриття меню, всередині якої є посилання -->
-        <label for="menuCheckbox"><a>Contact</a></label>
-      </li>
-      <!-- Пункт меню "Show me more" -->
-      <li>
-        <!-- Зовнішнє посилання, яке відкривається у новій вкладці, без закриття меню -->
-        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
-      </li>
-    </ul>
-  </div>
-</nav>
       </div>
     </header>
     <!-- Button up-down -->
