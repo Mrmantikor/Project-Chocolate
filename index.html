@@ -121,54 +121,6 @@
         </nav>
       </div>
     </header>
-     <!-- <div class="overlay overlay-menu" data-menu>
-        <div class="mob-menu">
-          <ul class="nav-mobile">
-            <li class="nav-item">
-              <a class="nav-link mobile is-current" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mobile" href="#made">How it's made?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mobile" href="#loved">Chocolate is loved</a>
-            </li>
-          </ul>
-          <ul class="social-mobile">
-            <li class="social-item">
-              <a
-                class="social-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                ><span
-                  ><svg class="socials-icon mobile" width="24" height="24">
-                    <use
-                      href="./images/sprite.svg#icon-facebook"
-                    ></use></svg></span
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://www.instagram.com/"
-                class="social-link"
-                target="_blank"
-                ><span
-                  ><svg class="socials-icon mobile" width="24" height="24">
-                    <use
-                      href="./images/sprite.svg#icon-instagram"
-                    ></use></svg></span
-              ></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://x.com/" target="_blank"
-                ><span
-                  ><svg class="socials-icon mobile" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-x"></use></svg></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div> -->
     <!-- Button up-down -->
     <div class="container">
       <a class="arrow-up" href="#">
@@ -767,7 +719,8 @@
             </p>
           </li>
         </ul>
-        <button class="review-btn btn" data-modal-open>Leave a review</button>
+        
+        <a class="review-btn btn" href="#review-popup">Leave a review</a>
       </div>
     </section>
     <!-- Subscribe -->
@@ -867,13 +820,13 @@
       </div>
     </footer>
     <!-- Form -->
-    <div class="overlay overlay-form" data-modal>
+    <div id="review-popup" class="overlay overlay-form">
       <div class="modal-form">
-        <button type="button" class="close-button" data-modal-close>
+        <a href="#" class="close-button">
           <svg class="close-button-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-x-close"></use>
           </svg>
-        </button>
+        </a>
         <h2 class="form-title title">
           leave a review about <span class="orange-span">our chocolate</span>
         </h2>
@@ -888,9 +841,9 @@
                 id="user-name"
                 required
                 placeholder="User Name"
-                minlength="4"
+                minlength="2"
                 maxlength="30"
-                pattern="[A-Za-z0-9]{6,}"
+                pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+(?:[ \-][A-Za-zА-Яа-яЁёІіЇїЄє]+)*$"
               />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-user"></use>
@@ -916,6 +869,7 @@
                 minlength="4"
                 maxlength="20"
                 placeholder="User Number"
+                pattern="^\d+$"
               />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-phone"></use>
@@ -1217,7 +1171,5 @@
         </div>
       </div>
     </div>
-    <!-- Java Script  -->
-    <script src="./js/form.js"></script>
   </body>
 </html>
