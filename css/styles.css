@@ -1817,7 +1817,7 @@ screen and (min-resolution: 2dppx) {
 /* Start Menu Buy Now */
 .modal-form-byu-now {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
   max-width: 609px;
   max-height: 1058px;
