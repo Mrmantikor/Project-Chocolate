@@ -41,9 +41,6 @@ learning, and sharing my progress with the dev community!
 This site isn’t just a portfolio piece—it’s my love letter to front-end
 development, blending creativity, precision, and performance. Take a look
 [https://www.linkedin.com/in/bohdan-vasylovich/] and let me know what you think
-in the comments! 👇
-
-#FrontEnd #WebDevelopment #HTML #CSS #WebDesign #Coding
 
 ![Image](https://github.com/user-attachments/assets/2178ff23-aebd-412e-92a1-71f5a7bd8a17)
 
